@@ -1,0 +1,43 @@
+@font-face {
+    font-family: calculator;
+    src: url(./Calculator.ttf) format('truetype');
+}
+.header{
+    flex: 1;
+    background-color: var(--bg-color-1);
+    padding: 20px;
+    overflow-y: scroll;
+}
+.header p{
+    font-family: calculator;
+    font-size: 25px;
+    line-height: 1.875rem;
+    color: var(--text-color-1);
+    display:flex;
+    justify-content: flex-end;
+}
+.header_expression{
+    font-family: calculator;
+    overflow-x: scroll;
+    width:100%;
+    font-weight: bold;
+    min-height: 30px;
+}
+.header_expression p{
+    font-family: calculator;
+    white-space: nowrap;
+    width:fit-content;
+    min-width: 100%;
+}
+.header_result {
+    font-family: calculator;
+    font-weight:bolder;
+    min-height: 30px;
+}
+.button_clear{
+    display: flex;
+    justify-content: flex-end;
+    align-items:end;
+    cursor: pointer;
+    padding: 20px 20px;
+}
